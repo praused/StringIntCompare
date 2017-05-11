@@ -17,6 +17,13 @@ namespace StringIntCompare
             DisplayOrder(apple, pear);
             DisplayOrder(pear, apple);
             DisplayOrder(apple, apple);
+
+            DisplayOrder(3, 4);
+            DisplayOrder(4, 3);
+            DisplayOrder(3, 3);
+
+            if (3.CompareTo(4) < 0) Console.WriteLine("3 < 4");
+            if (3 < 4) Console.WriteLine("3 < 4");
         }
 
         static void DisplayOrder<T>(T x, T y) where T : IComparable<T>
