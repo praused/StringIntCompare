@@ -10,6 +10,13 @@ namespace StringIntCompare
     {
         static void Main(string[] args)
         {
+
+            string apple = "apple";
+            string pear = "pear";
+
+            Console.WriteLine(apple.CompareTo(pear));
+            Console.WriteLine(pear.CompareTo(apple));
+            Console.WriteLine(apple.CompareTo(apple));
         }
     }
 }
